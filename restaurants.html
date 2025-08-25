@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants - Grand Stay Hotels</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Restaurants.css">
+</head>
+<body>
+
+    <header class="header">
+      <nav class="navbar">
+    <a href="index.html" class="logo">Grand Stay</a>
+    
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="branches.html">Branches</a></li>
+        <li><a href="adventures.html">Adventures</a></li>
+        <li class="dropdown">
+            <a href="restaurants.html" class="dropbtn">Restaurants</a>
+            <div class="dropdown-content">
+                <a href="event1.html">Annual Gala</a>
+                <a href="event2.html">Summer Festival</a>
+            </div>
+        </li>
+        <li><a href="booking.html">Booking</a></li>
+    </ul>
+
+    <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <div class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="branches.html">Branches</a>
+        <a href="adventures.html">Adventures</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="event1.html" style="padding-left: 40px;">- Annual Gala</a>
+        <a href="event2.html" style="padding-left: 40px;">- Summer Festival</a>
+        <a href="booking.html">Booking</a>
+    </div>
+
+    <a href="booking.html" class="btn btn-primary nav-btn">Book Now</a>
+</nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Our Exquisite Culinary Destinations</h1>
+                <p>Experience a culinary journey like no other at our signature restaurants.</p>
+            </div>
+      <section class="restaurants section-padding">
+    <div class="container">
+        <h2 class="section-title">Our Dining Venues</h2>
+    </div>
+</section>
+            <div class="container">
+                <div class="restaurants-grid">
+                    <article class="restaurant-card">
+                        <img src="images/restaurants/restaurant-1-bistro.png" alt="Elegant fine dining restaurant interior">
+                        <div class="restaurant-content">
+                            <h3>Azure Bistro (Fine Dining)</h3>
+                            <p>Experience the epitome of fine dining at Azure Bistro, where contemporary French cuisine meets an elegant ambiance. An exquisite culinary journey awaits.</p>
+                            <a href="#" class="btn-link" data-menu="bistro">View Menu</a>
+                        </div>
+                    </article>
+
+                    <article class="restaurant-card">
+                        <img src="images/restaurants/restaurant-2-cafe.jpg" alt="Cozy and modern hotel cafe">
+                        <div class="restaurant-content">
+                            <h3>The Garden Cafe</h3>
+                            <p>A bright and airy space, The Garden Cafe offers a relaxed atmosphere for breakfast, lunch, and delightful pastries, coffee, and fresh juices.</p>
+                            <a href="#" class="btn-link" data-menu="cafe">View Menu</a>
+                        </div>
+                    </article>
+
+                    <article class="restaurant-card">
+                       <img src="images/restaurants/restaurant-3-lounge.jpg" alt="Skyline lounge and bar with city views">
+                        <div class="restaurant-content">
+                            <h3>Skyline Lounge & Bar</h3>
+                            <p>Perched atop the hotel, Skyline Lounge & Bar boasts breathtaking panoramic views and a curated selection of cocktails and gourmet small bites.</p>
+                            <a href="#" class="btn-link" data-menu="lounge">View Menu</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="upcoming-events section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Upcoming Events & Experiences</h2>
+                <div class="events-grid">
+                    <div class="event-promo-card">
+                        <h3>Explore Annual Gala</h3>
+                        <p>Join us for our prestigious Annual Gala, an evening of elegance, exquisite dining, and live entertainment.</p>
+                        <a href="event1.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                    <div class="event-promo-card">
+                        <h3>Discover Summer Festival</h3>
+                        <p>Experience the vibrant energy of our Summer Festival, featuring local artists, culinary delights, and family-friendly activities.</p>
+                        <a href="event2.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="menu-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title">Menu Title</h2>
+            <div id="modal-body">
+                </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Grand Stay Hotels</h3>
+                    <p>Experience unparalleled luxury and comfort.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="branches.html">Branches</a></li>
+                        <li><a href="restaurants.html">Restaurants</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Email: contact@grandstay.com</p>
+                    <p>Phone: +94 11 234 5678</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Grand Stay Hotels. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="src/main.js"></script>
+</body>
+</html>

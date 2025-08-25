@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventures - Grand Stay Hotels</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Adventures.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Grand Stay</a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="branches.html">Branches</a></li>
+                <li><a href="adventures.html">Adventures</a></li>
+                <li class="dropdown">
+                    <a href="restaurants.html" class="dropbtn">Restaurants</a>
+                    <div class="dropdown-content">
+                        <a href="event1.html">Annual Gala</a>
+                        <a href="event2.html">Summer Festival</a>
+                    </div>
+                </li>
+                <li><a href="booking.html">Booking</a></li>
+            </ul>
+
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <div class="mobile-nav">
+                <a href="index.html">Home</a>
+                <a href="branches.html">Branches</a>
+                <a href="adventures.html">Adventures</a>
+                <a href="restaurants.html">Restaurants</a>
+                <a href="event1.html" style="padding-left: 40px;">- Annual Gala</a>
+                <a href="event2.html" style="padding-left: 40px;">- Summer Festival</a>
+                <a href="booking.html">Booking</a>
+            </div>
+
+            <a href="booking.html" class="btn btn-primary nav-btn">Book Now</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Unforgettable Adventures Await</h1>
+                <p>From serene nature excursions to thrilling outdoor challenges, Grand Stay Hotels offers a curated selection of local adventures.</p>
+            </div>
+        </section>
+
+        <section class="adventures section-padding">
+            <div class="container">
+                <h2 class="section-title">Explore Our Adventures</h2>
+                <div class="adventures-grid">
+                    <article class="adventure-card">
+                        <img src="images/adventures/adventure-1-diving.jpg" alt="Scuba divers exploring a coral reef">
+                        <div class="adventure-content">
+                            <h3>Coral Reef Diving Experience</h3>
+                            <p>Explore the vibrant underwater world of our tropical reefs, teeming with colorful fish and marine life.</p>
+                           <a href="#" class="btn btn-secondary adventure-btn" data-adventure="diving">Explore Now</a>
+                        </div>
+                    </article>
+
+                    <article class="adventure-card">
+                        <img src="images/adventures/adventure-2-hiking.jpg" alt="Hikers on a mountain trail at sunrise">
+                        <div class="adventure-content">
+                            <h3>Mountain Trail Expedition</h3>
+                            <p>Embark on a guided hike through scenic mountain trails and witness breathtaking sunrise views.</p>
+                            <a href="#" class="btn btn-secondary adventure-btn" data-adventure="hiking">Explore Now</a>
+                        </div>
+                    </article>
+
+                    <article class="adventure-card">
+                        <img src="images/adventures/Adventure-3-Safari.jpg" alt="A safari jeep observing elephants in a national park">
+                        <div class="adventure-content">
+                            <h3>Wildlife Safari Adventure</h3>
+                            <p>Get up close with majestic elephants, leopards, and diverse bird species on an exciting jeep safari.</p>
+                            <a href="#" class="btn btn-secondary adventure-btn" data-adventure="safari">Explore Now</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="adventure-map section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Discover Our Adventure Hotspots</h2>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31736.176594976318!2d80.09843194048536!3d6.127731627824027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae177fbcae7226d%3A0x373eeb50aad15308!2sHikkaduwa!5e0!3m2!1sen!2slk!4v1755836660672!5m2!1sen!2slk" width="900" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="menu-menu-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn">×</span>
+            <h2 id="modal-title">Adventure Details</h2>
+            <div id="modal-body">
+                </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Grand Stay Hotels</h3>
+                    <p>Experience unparalleled luxury and comfort.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="branches.html">Branches</a></li>
+                        <li><a href="restaurants.html">Restaurants</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Email: contact@grandstay.com</p>
+                    <p>Phone: +94 11 234 5678</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Grand Stay Hotels. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/main.js"></script>
+
+</body>
+</html>

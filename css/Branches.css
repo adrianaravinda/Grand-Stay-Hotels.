@@ -1,0 +1,114 @@
+
+.page-header {
+    background: var(--bg-light);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+.branches-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.branch-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.branch-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.branch-card .branch-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.branch-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.branch-card p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.branch-card .branch-map {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.overview-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.overview-table th, .overview-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.overview-table thead {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.overview-table tbody tr:hover {
+    background-color: var(--bg-light);
+}
+
+.overview-table tfoot {
+    background: #f4f4f4;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+.map-embed {
+    width: 100%;
+    height: 170px; 
+    border-radius: 5px;
+    overflow: hidden; 
+    border: 1px solid #ddd;
+    margin-top: 1rem;
+}
+
+.map-embed iframe {
+    width: 100%;
+    height: 100%;
+    border: 0; 
+}
+.overview-table tfoot td {
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .branches-grid {
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+@media (max-width: 480px) {
+    .branches-grid {
+        grid-template-columns: 1fr;
+    }
+}

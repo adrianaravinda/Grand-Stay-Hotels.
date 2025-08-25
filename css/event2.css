@@ -1,0 +1,84 @@
+#event-page-content {
+    font-family: 'Poppins', sans-serif; 
+    background: linear-gradient(135deg, #FFEFBA, #FFFFFF); 
+    color: #3D3D3D;
+}
+
+.event-banner {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.event-banner .main-image {
+    width: 60%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 50%; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    
+    animation: popIn 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.banner-text {
+    margin-top: -40px;
+}
+
+.banner-text h1 {
+    font-size: 3.5rem;
+    color: #D38312;
+    font-weight: 700;
+}
+
+.event-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.event-details {
+    text-align: center;
+}
+
+.feature-grid {
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.feature-text, .feature-image { flex: 1; }
+.feature-image img { width: 100%; border-radius: 15px; }
+
+.event-booking-info {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 3rem 0;
+}
+
+.event-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 15px 35px;
+    background: linear-gradient(to right, #D38312, #A86108);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px; 
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(211, 131, 18, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.event-btn:hover {
+    transform: scale(1.05);
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

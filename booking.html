@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Grand Stay Hotels</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Booking.css">
+</head>
+<body>
+
+    <header class="header">
+     <nav class="navbar">
+    <a href="index.html" class="logo">Grand Stay</a>
+    
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="branches.html">Branches</a></li>
+        <li><a href="adventures.html">Adventures</a></li>
+        <li class="dropdown">
+            <a href="restaurants.html" class="dropbtn">Restaurants</a>
+            <div class="dropdown-content">
+                <a href="event1.html">Annual Gala</a>
+                <a href="event2.html">Summer Festival</a>
+            </div>
+        </li>
+        <li><a href="booking.html">Booking</a></li>
+    </ul>
+
+    <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <div class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="branches.html">Branches</a>
+        <a href="adventures.html">Adventures</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="event1.html" style="padding-left: 40px;">- Annual Gala</a>
+        <a href="event2.html" style="padding-left: 40px;">- Summer Festival</a>
+        <a href="booking.html">Booking</a>
+    </div>
+
+    <a href="booking.html" class="btn btn-primary nav-btn">Book Now</a>
+</nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Your Grand Stay Booking</h1>
+                <p>Complete the form below to reserve your stay and adventures with us.</p>
+            </div>
+        </section>
+
+        <section class="booking-section section-padding">
+            <div class="container">
+                <div class="booking-wrapper">
+                    <div class="booking-form-container">
+                        <form id="booking-form">
+                            <div class="form-section">
+                                <h3>Guest & Room Details</h3>
+                                <div class="form-group">
+                                    <label>Room Type</label>
+                                    <div class="radio-group">
+                                        <input type="radio" id="single-room" name="room-type" value="single" checked>
+                                        <label for="single-room">Single Room</label>
+                                        <input type="radio" id="double-room" name="room-type" value="double">
+                                        <label for="double-room">Double Room</label>
+                                        <input type="radio" id="triple-room" name="room-type" value="triple">
+                                        <label for="triple-room">Triple Room</label>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="num-rooms">Number of Rooms</label>
+                                        <input type="number" id="num-rooms" min="1" value="1">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="num-adults">Number of Adults</label>
+                                        <input type="number" id="num-adults" min="1" value="1">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                     <div class="form-group">
+                                        <label for="num-children">Number of Children (Above 5)</label>
+                                        <input type="number" id="num-children" min="0" value="0">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="duration">Duration of Stay (Nights)</label>
+                                        <input type="number" id="duration" min="1" value="1">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3>Optional Extras & Promo</h3>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="extra-bed" name="extra-bed">
+                                    <label for="extra-bed">Extra Bed (LKR 8000.00)</label>
+                                </div>
+                                <div class="form-group">
+                                    <label for="promo-code">Promo Code</label>
+                                    <input type="text" id="promo-code" placeholder="Enter Promo123 for 5% off">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="booking-summary-container">
+                        <div class="cost-card">
+                            <h3>Current Booking Cost</h3>
+                            <p id="current-cost">LKR 0.00</p>
+                        </div>
+                        <div class="cost-card">
+                            <h3>Overall Booking Cost</h3>
+                            <p id="overall-cost">LKR 0.00</p>
+                        </div>
+                        <div class="action-buttons">
+                           <button type="button" id="book-now-btn" class="btn btn-primary full-width">Book Hotel</button>
+                           <button type="button" id="book-adventure-btn" class="btn btn-secondary full-width">Book Adventure</button>
+                        </div>
+                        <div class="advanced-features">
+                            <button type="button" id="add-to-fav-btn" class="btn btn-tertiary full-width">Add to Favourites</button>
+                            <div class="loyalty-section">
+                                <button type="button" id="check-loyalty-btn" class="btn btn-tertiary full-width">Check Loyalty</button>
+                                <p>Your Loyalty Points: <span id="loyalty-points-display">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Grand Stay Hotels</h3>
+                    <p>Experience unparalleled luxury and comfort.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="branches.html">Branches</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Email: contact@grandstay.com</p>
+                    <p>Phone: +94 11 234 5678</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Grand Stay Hotels. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/booking.js"></script>
+    <script src="src/main.js"></script>
+</body>
+</html>
